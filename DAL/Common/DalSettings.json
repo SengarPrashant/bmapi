@@ -1,0 +1,6 @@
+{
+  "MySqlCon": "server=103.228.112.182;port=3306;database=MySchool;user=findeasily;password=Singh@205;",
+  "MySqlNextraone": "server=localhost;port=3306;database=MySchool;user=findeasily;password=Singh@205;",
+  "MySqlLocal": "server=103.228.112.182;port=3306;database=MySchool;user=findeasily;password=Singh@205;",
+  "SqlCon": "Data Source=DESKTOP-5QIHQBD;Initial Catalog=BusinessMitra;Integrated Security=True"
+}
