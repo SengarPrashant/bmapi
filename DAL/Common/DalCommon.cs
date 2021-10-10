@@ -78,5 +78,31 @@ namespace DAL.Common
                 throw;
             }
         }
+
+        public async Task<int> SaveCustomerbasicDetails(CustomerBasicDetail customer)
+        {
+            try
+            {
+                IEnumerable<int> customerID;
+                var p = new DynamicParameters();
+                p.Add("@Name", customer.Name);
+                p.Add("@Email", customer.Email);
+                p.Add("@Mobile", customer.Mobile);
+                p.Add("@BusinessName", customer.BusinessName);
+                p.Add("@Gstin", customer.Gstin);
+                p.Add("@Country", customer.Country);
+                p.Add("@State", customer.State);
+                using (var connection = new SqlConnection(DalConstants.SqlConString))
+                {
+                    await connection.OpenAsync();
+                    customerID = await connection.QueryAsync<int>("saveCustomerBasicDetail", p, commandType: CommandType.StoredProcedure);
+                }
+                return customerID.AsList<int>().Count > 0 ? customerID.AsList<int>()[0] : 0;
+            }
+            catch (Exception ex)
+            {
+                throw;
+            }
+        }
     }
 }

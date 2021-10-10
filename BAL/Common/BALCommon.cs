@@ -30,5 +30,9 @@ namespace BAL.Common
         {
             return _dalCommon.GetPageLinks(pageCode);
         }
+        public Task<int> SaveCustomerbasicDetails(CustomerBasicDetail customer)
+        {
+            return _dalCommon.SaveCustomerbasicDetails(customer);
+        }
     }
 }

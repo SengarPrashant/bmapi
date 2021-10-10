@@ -6,6 +6,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using IBAL.Common;
 using Microsoft.AspNetCore.Authorization;
+using Models.Common;
 
 namespace myschool.Controllers.Common
 {
@@ -49,6 +50,29 @@ namespace myschool.Controllers.Common
             {
                 var location = await _CommonService.GetLocation(searchText, startRow, pageSize, exact);
                 return Ok(location);
+            }
+            catch (Exception ex)
+            {
+                throw;
+            }
+        }
+
+
+        [AllowAnonymous]
+        [HttpPost]
+        [Route("SaveCustomer")]
+        public async Task<IActionResult> SaveCustomerbasicDetail(CustomerBasicDetail customer)
+        {
+            try
+            {
+                if (string.IsNullOrEmpty(customer.Name) ||
+                    string.IsNullOrEmpty(customer.Email) ||
+                    string.IsNullOrEmpty(customer.Mobile))
+                {
+                    return BadRequest();
+                }
+                var cusId = await _CommonService.SaveCustomerbasicDetails(customer);
+                return Ok(cusId);
             }
             catch (Exception ex)
             {

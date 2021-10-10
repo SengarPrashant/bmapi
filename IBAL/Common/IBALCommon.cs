@@ -11,5 +11,6 @@ namespace IBAL.Common
         Task<IEnumerable<PageInfo>> GetPageInfo(string codeCode);
         Task<IEnumerable<Location>> GetLocation(string? searchText, int? startRow, int? pageSize, bool exact);
         Task<IEnumerable<PageLinks>> GetPageLinks(string pageCode);
+        Task<int> SaveCustomerbasicDetails(CustomerBasicDetail customer);
     }
 }

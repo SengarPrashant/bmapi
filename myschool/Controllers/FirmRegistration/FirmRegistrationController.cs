@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using IBAL.Firm;
+using IBAL.Common;
 using Microsoft.AspNetCore.Authorization;
 
 namespace myschool.Controllers.FirmRegistration
@@ -15,7 +16,7 @@ namespace myschool.Controllers.FirmRegistration
     {
 
         private readonly IBalFirm _firmService;
-        public FirmRegistrationController(IBalFirm firmService)
+        public FirmRegistrationController(IBalFirm firmService, IBALCommon bALCommon)
         {
             _firmService = firmService;
         }
@@ -38,5 +39,7 @@ namespace myschool.Controllers.FirmRegistration
                 throw;
             }
         }
+
+       
     }
 }
