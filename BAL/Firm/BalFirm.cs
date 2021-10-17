@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Linq;
 using System.Threading.Tasks;
 using IBAL.Firm;
 using Models.Firm;
@@ -28,6 +29,24 @@ namespace BAL.Firm
                     plan.ServiceList = planServices;
                 }
                 return plan;
+            }
+            catch (Exception ex)
+            {
+
+                throw;
+            }
+        }
+
+        public async Task<IEnumerable<PlanType>> GetPlanTypes(int planId, bool isActive, int planTypeID = 0)
+        {
+            try
+            {
+                IEnumerable<PlanType> planTyps = await _dalFirm.GetPlanTypes(planId, isActive);
+                if(planTypeID > 0)
+                {
+                   return planTyps.ToList().Where(item => item.Id == planTypeID).ToList();
+                }
+                return planTyps.ToList();
             }
             catch (Exception ex)
             {

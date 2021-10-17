@@ -9,5 +9,6 @@ namespace IBAL.Firm
     public interface IBalFirm
     {
         Task<FirmPlan> GetPlan(string planCode, Boolean? isActive);
+        Task<IEnumerable<PlanType>> GetPlanTypes(int planId, bool isActive, int planTypeID=0);
     }
 }

@@ -629,3 +629,4 @@ D:\GitApps\BusinessMitraApi\WithSwagger\myschool\obj\Release\netcoreapp3.0\mysch
 D:\GitApps\BusinessMitraApi\WithSwagger\myschool\obj\Release\netcoreapp3.0\myschool.dll
 D:\GitApps\BusinessMitraApi\WithSwagger\myschool\obj\Release\netcoreapp3.0\myschool.pdb
 D:\GitApps\BusinessMitraApi\WithSwagger\myschool\obj\Release\netcoreapp3.0\myschool.genruntimeconfig.cache
+D:\GitApps\BusinessMitraApi\WithSwagger\myschool\bin\Release\netcoreapp3.0\Razorpay.dll

@@ -14,6 +14,7 @@ namespace Models.Common
         public string BusinessName { get; set; }
         public string Country { get; set; }
         public string State { get; set; }
-
+        public int PlanId { get; set; }
+        public int PlanTypeId { get; set; }
     }
 }

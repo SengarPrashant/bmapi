@@ -638,3 +638,4 @@ D:\GitApps\BusinessMitraApi\WithSwagger\myschool\bin\Debug\netcoreapp3.0\runtime
 D:\GitApps\BusinessMitraApi\WithSwagger\myschool\bin\Debug\netcoreapp3.0\runtimes\win\lib\netcoreapp2.1\System.Security.Principal.Windows.dll
 D:\GitApps\BusinessMitraApi\WithSwagger\myschool\bin\Debug\netcoreapp3.0\runtimes\win\lib\netcoreapp2.0\System.Text.Encoding.CodePages.dll
 D:\GitApps\BusinessMitraApi\WithSwagger\myschool\obj\Debug\netcoreapp3.0\myschool.csprojAssemblyReference.cache
+D:\GitApps\BusinessMitraApi\WithSwagger\myschool\bin\Debug\netcoreapp3.0\Razorpay.dll

@@ -1241,6 +1241,18 @@
           "lib/netstandard1.6/NuGet.Frameworks.dll": {}
         }
       },
+      "Razorpay/3.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Newtonsoft.Json": "11.0.2"
+        },
+        "compile": {
+          "lib/net45/Razorpay.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Razorpay.dll": {}
+        }
+      },
       "runtime.debian.8-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.0": {
         "type": "package",
         "runtimeTargets": {
@@ -5210,6 +5222,19 @@
         "lib/netstandard1.6/NuGet.Frameworks.xml",
         "nuget.frameworks.4.7.0.nupkg.sha512",
         "nuget.frameworks.nuspec"
+      ]
+    },
+    "Razorpay/3.0.0": {
+      "sha512": "V7hSh0L635aGQ3nX9mtjREHyOlTeXEptlDXIo7LABulFkfD9DZQyI504mxh/ISIOkVrnU5TLMMomqenH5okzEA==",
+      "type": "package",
+      "path": "razorpay/3.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net40/Razorpay.dll",
+        "lib/net45/Razorpay.dll",
+        "razorpay.3.0.0.nupkg.sha512",
+        "razorpay.nuspec"
       ]
     },
     "runtime.debian.8-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.0": {
@@ -10288,6 +10313,7 @@
       "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 3.0.0",
       "Models >= 1.0.0",
       "MySql.Data >= 8.0.19",
+      "Razorpay >= 3.0.0",
       "Swashbuckle.AspNetCore >= 5.3.3",
       "System.IdentityModel.Tokens.Jwt >= 6.5.0",
       "windowsazure.mediaservices >= 4.2.0"
@@ -10383,6 +10409,10 @@
             "target": "Package",
             "version": "[8.0.19, )"
           },
+          "Razorpay": {
+            "target": "Package",
+            "version": "[3.0.0, )"
+          },
           "Swashbuckle.AspNetCore": {
             "target": "Package",
             "version": "[5.3.3, )"
@@ -10473,6 +10503,16 @@
       "warningLevel": 1,
       "message": "Package 'Microsoft.IdentityModel.Protocol.Extensions 1.0.2.205111437' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework '.NETCoreApp,Version=v3.0'. This package may not be fully compatible with your project.",
       "libraryId": "Microsoft.IdentityModel.Protocol.Extensions",
+      "targetGraphs": [
+        ".NETCoreApp,Version=v3.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'Razorpay 3.0.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework '.NETCoreApp,Version=v3.0'. This package may not be fully compatible with your project.",
+      "libraryId": "Razorpay",
       "targetGraphs": [
         ".NETCoreApp,Version=v3.0"
       ]
