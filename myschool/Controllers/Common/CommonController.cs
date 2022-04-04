@@ -10,6 +10,9 @@ using Microsoft.AspNetCore.Authorization;
 using Models.Common;
 using Models.Helpers;
 using Razorpay.Api;
+using Newtonsoft.Json.Linq;
+using Newtonsoft.Json;
+using Paytm;
 
 namespace myschool.Controllers.Common
 {
@@ -88,6 +91,51 @@ namespace myschool.Controllers.Common
 
         [AllowAnonymous]
         [HttpPost]
+        [Route("GeneratePayTmOrder")]
+        public async Task<IActionResult> GeneratePayTmOrder(CustomerBasicDetail customer)
+        {
+            try
+            {
+                if (string.IsNullOrEmpty(customer.Name) ||
+                   string.IsNullOrEmpty(customer.Email) ||
+                   string.IsNullOrEmpty(customer.Mobile))
+                {
+                    return BadRequest();
+                }
+                var _plan = await _FirmService.GetPlanTypes(customer.PlanId, true, customer.PlanTypeId);
+                if (_plan.ToList().Count > 0)
+                {
+                    var currentPlan = _plan.ToList()[0];
+                    var _OrderID = CommonUtil.GetTransactionID(customer.Id.ToString(), "PTM");
+                    var req = new Dictionary<string, string>();
+
+                    Dictionary<string, string> paytmParams = new Dictionary<string, string>();
+                    /* add parameters in Array */
+                    paytmParams.Add("MID", "BjEulY93761632900904");
+                    paytmParams.Add("ORDER_ID", _OrderID);
+                    paytmParams.Add("CHANNEL_ID", "WEB");
+                    paytmParams.Add("INDUSTRY_TYPE_ID", "Retail");
+                    paytmParams.Add("WEBSITE", "WEBSTAGING");
+                    paytmParams.Add("EMAIL", customer.Email);
+                    paytmParams.Add("MOBILE_NO", customer.Mobile);
+                    paytmParams.Add("TXN_AMOUNT", currentPlan.Price.ToString());
+                    paytmParams.Add("CALLBACK_URL", "http://localhost:6233/api/Varifyrpay");
+
+                    String paytmChecksum = Paytm.Checksum.generateSignature(paytmParams, "&puh6kl2JgZmJr3q");
+                    paytmParams.Add("CHECKSUMHASH", paytmChecksum);
+                    return Ok(new { parms = paytmParams });
+                }
+                return BadRequest();
+            }
+            catch (Exception ex)
+            {
+
+                throw;
+            }
+        }
+
+        [AllowAnonymous]
+        [HttpPost]
         [Route("GenerateOrder")]
         public async Task<IActionResult> GenerateOrder(CustomerBasicDetail customer)
         {
@@ -138,5 +186,42 @@ namespace myschool.Controllers.Common
             }
         }
 
+        [AllowAnonymous]
+        [HttpPost]
+        [Route("Varifyrpay")]
+        public async Task<IActionResult> Varifyrpay(Object paymentOptions)
+        {
+            //var headerValue = "";
+            Request.Headers.TryGetValue("X-Razorpay-Signature", out var signature);
+            var details = (JObject)JsonConvert.DeserializeObject(paymentOptions.ToString());
+            var data = details["payload"];
+            var payment = data["payment"];
+            var entity = payment["entity"];
+            string OrderId = entity["order_id"].ToString();
+            string paymentId = entity["id"].ToString();
+            string paymentstatus = entity["status"].ToString();
+            var isValid =CommonUtil.CompareSignatures(OrderId, paymentId, signature, CommonUtil.RPWehookDevSecret);
+            //Dictionary<string, string> attributes = new Dictionary<string, string>();
+            //attributes.Add("razorpay_payment_id", paymentId);
+            //attributes.Add("razorpay_order_id", Request.Form["razorpay_order_id"]);
+            //attributes.Add("razorpay_signature", Request.Form["razorpay_signature"]);
+
+            // Utils.verifyPaymentSignature(attributes);
+             Utils.verifyWebhookSignature(paymentOptions.ToString(), signature, CommonUtil.RPWehookDevSecret);
+
+            // Utils.verifyWebhookSignature(webhookBody, webhookSignature, webhookSecret);// webhookBody should be raw webhook request body
+
+            return Ok(OrderId);
+        }
+
+
+        [AllowAnonymous]
+        [HttpPost]
+        [Route("ValidatePay")]
+        public async Task<IActionResult> ValidatePay(Object paymentOptions)
+        {
+
+            return Ok("ok");
+        }
     }
 }

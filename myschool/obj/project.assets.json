@@ -1241,6 +1241,15 @@
           "lib/netstandard1.6/NuGet.Frameworks.dll": {}
         }
       },
+      "PaytmChecksum/1.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/PaytmChecksum.dll": {}
+        },
+        "runtime": {
+          "lib/PaytmChecksum.dll": {}
+        }
+      },
       "Razorpay/3.0.0": {
         "type": "package",
         "dependencies": {
@@ -5222,6 +5231,18 @@
         "lib/netstandard1.6/NuGet.Frameworks.xml",
         "nuget.frameworks.4.7.0.nupkg.sha512",
         "nuget.frameworks.nuspec"
+      ]
+    },
+    "PaytmChecksum/1.0.0": {
+      "sha512": "ZtZ8zVXlx4sIUZYKcHcVaD2GI49h4Cr583OLt8YxZqvGoO0VXCe7LTVvPUMsmly1ng/YwUscTqahirsW9Gtk9Q==",
+      "type": "package",
+      "path": "paytmchecksum/1.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/PaytmChecksum.dll",
+        "paytmchecksum.1.0.0.nupkg.sha512",
+        "paytmchecksum.nuspec"
       ]
     },
     "Razorpay/3.0.0": {
@@ -10313,6 +10334,7 @@
       "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 3.0.0",
       "Models >= 1.0.0",
       "MySql.Data >= 8.0.19",
+      "PaytmChecksum >= 1.0.0",
       "Razorpay >= 3.0.0",
       "Swashbuckle.AspNetCore >= 5.3.3",
       "System.IdentityModel.Tokens.Jwt >= 6.5.0",
@@ -10326,11 +10348,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\GitApps\\BusinessMitraApi\\WithSwagger\\myschool\\myschool.csproj",
+      "projectUniqueName": "D:\\GitApps\\bmapi\\myschool\\myschool.csproj",
       "projectName": "myschool",
-      "projectPath": "D:\\GitApps\\BusinessMitraApi\\WithSwagger\\myschool\\myschool.csproj",
+      "projectPath": "D:\\GitApps\\bmapi\\myschool\\myschool.csproj",
       "packagesPath": "C:\\Users\\Prashant\\.nuget\\packages\\",
-      "outputPath": "D:\\GitApps\\BusinessMitraApi\\WithSwagger\\myschool\\obj\\",
+      "outputPath": "D:\\GitApps\\bmapi\\myschool\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -10350,17 +10372,17 @@
         "netcoreapp3.0": {
           "targetAlias": "netcoreapp3.0",
           "projectReferences": {
-            "D:\\GitApps\\BusinessMitraApi\\WithSwagger\\BAL\\BAL.csproj": {
-              "projectPath": "D:\\GitApps\\BusinessMitraApi\\WithSwagger\\BAL\\BAL.csproj"
+            "D:\\GitApps\\bmapi\\BAL\\BAL.csproj": {
+              "projectPath": "D:\\GitApps\\bmapi\\BAL\\BAL.csproj"
             },
-            "D:\\GitApps\\BusinessMitraApi\\WithSwagger\\DAL\\DAL.csproj": {
-              "projectPath": "D:\\GitApps\\BusinessMitraApi\\WithSwagger\\DAL\\DAL.csproj"
+            "D:\\GitApps\\bmapi\\DAL\\DAL.csproj": {
+              "projectPath": "D:\\GitApps\\bmapi\\DAL\\DAL.csproj"
             },
-            "D:\\GitApps\\BusinessMitraApi\\WithSwagger\\IBAL\\IBAL.csproj": {
-              "projectPath": "D:\\GitApps\\BusinessMitraApi\\WithSwagger\\IBAL\\IBAL.csproj"
+            "D:\\GitApps\\bmapi\\IBAL\\IBAL.csproj": {
+              "projectPath": "D:\\GitApps\\bmapi\\IBAL\\IBAL.csproj"
             },
-            "D:\\GitApps\\BusinessMitraApi\\WithSwagger\\Models\\Models.csproj": {
-              "projectPath": "D:\\GitApps\\BusinessMitraApi\\WithSwagger\\Models\\Models.csproj"
+            "D:\\GitApps\\bmapi\\Models\\Models.csproj": {
+              "projectPath": "D:\\GitApps\\bmapi\\Models\\Models.csproj"
             }
           }
         }
@@ -10408,6 +10430,10 @@
           "MySql.Data": {
             "target": "Package",
             "version": "[8.0.19, )"
+          },
+          "PaytmChecksum": {
+            "target": "Package",
+            "version": "[1.0.0, )"
           },
           "Razorpay": {
             "target": "Package",
@@ -10503,6 +10529,16 @@
       "warningLevel": 1,
       "message": "Package 'Microsoft.IdentityModel.Protocol.Extensions 1.0.2.205111437' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework '.NETCoreApp,Version=v3.0'. This package may not be fully compatible with your project.",
       "libraryId": "Microsoft.IdentityModel.Protocol.Extensions",
+      "targetGraphs": [
+        ".NETCoreApp,Version=v3.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'PaytmChecksum 1.0.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework '.NETCoreApp,Version=v3.0'. This package may not be fully compatible with your project.",
+      "libraryId": "PaytmChecksum",
       "targetGraphs": [
         ".NETCoreApp,Version=v3.0"
       ]

@@ -197,11 +197,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\GitApps\\BusinessMitraApi\\WithSwagger\\IBAL\\IBAL.csproj",
+      "projectUniqueName": "D:\\GitApps\\bmapi\\IBAL\\IBAL.csproj",
       "projectName": "IBAL",
-      "projectPath": "D:\\GitApps\\BusinessMitraApi\\WithSwagger\\IBAL\\IBAL.csproj",
+      "projectPath": "D:\\GitApps\\bmapi\\IBAL\\IBAL.csproj",
       "packagesPath": "C:\\Users\\Prashant\\.nuget\\packages\\",
-      "outputPath": "D:\\GitApps\\BusinessMitraApi\\WithSwagger\\IBAL\\obj\\",
+      "outputPath": "D:\\GitApps\\bmapi\\IBAL\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -221,8 +221,8 @@
         "netcoreapp3.0": {
           "targetAlias": "netcoreapp3.0",
           "projectReferences": {
-            "D:\\GitApps\\BusinessMitraApi\\WithSwagger\\Models\\Models.csproj": {
-              "projectPath": "D:\\GitApps\\BusinessMitraApi\\WithSwagger\\Models\\Models.csproj"
+            "D:\\GitApps\\bmapi\\Models\\Models.csproj": {
+              "projectPath": "D:\\GitApps\\bmapi\\Models\\Models.csproj"
             }
           }
         }

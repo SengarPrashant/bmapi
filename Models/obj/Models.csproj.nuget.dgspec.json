@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\GitApps\\BusinessMitraApi\\WithSwagger\\Models\\Models.csproj": {}
+    "D:\\GitApps\\bmapi\\Models\\Models.csproj": {}
   },
   "projects": {
-    "D:\\GitApps\\BusinessMitraApi\\WithSwagger\\Models\\Models.csproj": {
+    "D:\\GitApps\\bmapi\\Models\\Models.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\GitApps\\BusinessMitraApi\\WithSwagger\\Models\\Models.csproj",
+        "projectUniqueName": "D:\\GitApps\\bmapi\\Models\\Models.csproj",
         "projectName": "Models",
-        "projectPath": "D:\\GitApps\\BusinessMitraApi\\WithSwagger\\Models\\Models.csproj",
+        "projectPath": "D:\\GitApps\\bmapi\\Models\\Models.csproj",
         "packagesPath": "C:\\Users\\Prashant\\.nuget\\packages\\",
-        "outputPath": "D:\\GitApps\\BusinessMitraApi\\WithSwagger\\Models\\obj\\",
+        "outputPath": "D:\\GitApps\\bmapi\\Models\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

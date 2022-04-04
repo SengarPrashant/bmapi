@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\GitApps\\BusinessMitraApi\\WithSwagger\\myschool\\myschool.csproj": {}
+    "D:\\GitApps\\bmapi\\myschool\\myschool.csproj": {}
   },
   "projects": {
-    "D:\\GitApps\\BusinessMitraApi\\WithSwagger\\BAL\\BAL.csproj": {
+    "D:\\GitApps\\bmapi\\BAL\\BAL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\GitApps\\BusinessMitraApi\\WithSwagger\\BAL\\BAL.csproj",
+        "projectUniqueName": "D:\\GitApps\\bmapi\\BAL\\BAL.csproj",
         "projectName": "BAL",
-        "projectPath": "D:\\GitApps\\BusinessMitraApi\\WithSwagger\\BAL\\BAL.csproj",
+        "projectPath": "D:\\GitApps\\bmapi\\BAL\\BAL.csproj",
         "packagesPath": "C:\\Users\\Prashant\\.nuget\\packages\\",
-        "outputPath": "D:\\GitApps\\BusinessMitraApi\\WithSwagger\\BAL\\obj\\",
+        "outputPath": "D:\\GitApps\\bmapi\\BAL\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -31,14 +31,14 @@
           "netcoreapp3.0": {
             "targetAlias": "netcoreapp3.0",
             "projectReferences": {
-              "D:\\GitApps\\BusinessMitraApi\\WithSwagger\\IBAL\\IBAL.csproj": {
-                "projectPath": "D:\\GitApps\\BusinessMitraApi\\WithSwagger\\IBAL\\IBAL.csproj"
+              "D:\\GitApps\\bmapi\\IBAL\\IBAL.csproj": {
+                "projectPath": "D:\\GitApps\\bmapi\\IBAL\\IBAL.csproj"
               },
-              "D:\\GitApps\\BusinessMitraApi\\WithSwagger\\IDAL\\IDAL.csproj": {
-                "projectPath": "D:\\GitApps\\BusinessMitraApi\\WithSwagger\\IDAL\\IDAL.csproj"
+              "D:\\GitApps\\bmapi\\IDAL\\IDAL.csproj": {
+                "projectPath": "D:\\GitApps\\bmapi\\IDAL\\IDAL.csproj"
               },
-              "D:\\GitApps\\BusinessMitraApi\\WithSwagger\\Models\\Models.csproj": {
-                "projectPath": "D:\\GitApps\\BusinessMitraApi\\WithSwagger\\Models\\Models.csproj"
+              "D:\\GitApps\\bmapi\\Models\\Models.csproj": {
+                "projectPath": "D:\\GitApps\\bmapi\\Models\\Models.csproj"
               }
             }
           }
@@ -91,14 +91,14 @@
         }
       }
     },
-    "D:\\GitApps\\BusinessMitraApi\\WithSwagger\\DAL\\DAL.csproj": {
+    "D:\\GitApps\\bmapi\\DAL\\DAL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\GitApps\\BusinessMitraApi\\WithSwagger\\DAL\\DAL.csproj",
+        "projectUniqueName": "D:\\GitApps\\bmapi\\DAL\\DAL.csproj",
         "projectName": "DAL",
-        "projectPath": "D:\\GitApps\\BusinessMitraApi\\WithSwagger\\DAL\\DAL.csproj",
+        "projectPath": "D:\\GitApps\\bmapi\\DAL\\DAL.csproj",
         "packagesPath": "C:\\Users\\Prashant\\.nuget\\packages\\",
-        "outputPath": "D:\\GitApps\\BusinessMitraApi\\WithSwagger\\DAL\\obj\\",
+        "outputPath": "D:\\GitApps\\bmapi\\DAL\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -118,11 +118,11 @@
           "netcoreapp3.0": {
             "targetAlias": "netcoreapp3.0",
             "projectReferences": {
-              "D:\\GitApps\\BusinessMitraApi\\WithSwagger\\IDAL\\IDAL.csproj": {
-                "projectPath": "D:\\GitApps\\BusinessMitraApi\\WithSwagger\\IDAL\\IDAL.csproj"
+              "D:\\GitApps\\bmapi\\IDAL\\IDAL.csproj": {
+                "projectPath": "D:\\GitApps\\bmapi\\IDAL\\IDAL.csproj"
               },
-              "D:\\GitApps\\BusinessMitraApi\\WithSwagger\\Models\\Models.csproj": {
-                "projectPath": "D:\\GitApps\\BusinessMitraApi\\WithSwagger\\Models\\Models.csproj"
+              "D:\\GitApps\\bmapi\\Models\\Models.csproj": {
+                "projectPath": "D:\\GitApps\\bmapi\\Models\\Models.csproj"
               }
             }
           }
@@ -191,14 +191,14 @@
         }
       }
     },
-    "D:\\GitApps\\BusinessMitraApi\\WithSwagger\\IBAL\\IBAL.csproj": {
+    "D:\\GitApps\\bmapi\\IBAL\\IBAL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\GitApps\\BusinessMitraApi\\WithSwagger\\IBAL\\IBAL.csproj",
+        "projectUniqueName": "D:\\GitApps\\bmapi\\IBAL\\IBAL.csproj",
         "projectName": "IBAL",
-        "projectPath": "D:\\GitApps\\BusinessMitraApi\\WithSwagger\\IBAL\\IBAL.csproj",
+        "projectPath": "D:\\GitApps\\bmapi\\IBAL\\IBAL.csproj",
         "packagesPath": "C:\\Users\\Prashant\\.nuget\\packages\\",
-        "outputPath": "D:\\GitApps\\BusinessMitraApi\\WithSwagger\\IBAL\\obj\\",
+        "outputPath": "D:\\GitApps\\bmapi\\IBAL\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -218,8 +218,8 @@
           "netcoreapp3.0": {
             "targetAlias": "netcoreapp3.0",
             "projectReferences": {
-              "D:\\GitApps\\BusinessMitraApi\\WithSwagger\\Models\\Models.csproj": {
-                "projectPath": "D:\\GitApps\\BusinessMitraApi\\WithSwagger\\Models\\Models.csproj"
+              "D:\\GitApps\\bmapi\\Models\\Models.csproj": {
+                "projectPath": "D:\\GitApps\\bmapi\\Models\\Models.csproj"
               }
             }
           }
@@ -266,14 +266,14 @@
         }
       }
     },
-    "D:\\GitApps\\BusinessMitraApi\\WithSwagger\\IDAL\\IDAL.csproj": {
+    "D:\\GitApps\\bmapi\\IDAL\\IDAL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\GitApps\\BusinessMitraApi\\WithSwagger\\IDAL\\IDAL.csproj",
+        "projectUniqueName": "D:\\GitApps\\bmapi\\IDAL\\IDAL.csproj",
         "projectName": "IDAL",
-        "projectPath": "D:\\GitApps\\BusinessMitraApi\\WithSwagger\\IDAL\\IDAL.csproj",
+        "projectPath": "D:\\GitApps\\bmapi\\IDAL\\IDAL.csproj",
         "packagesPath": "C:\\Users\\Prashant\\.nuget\\packages\\",
-        "outputPath": "D:\\GitApps\\BusinessMitraApi\\WithSwagger\\IDAL\\obj\\",
+        "outputPath": "D:\\GitApps\\bmapi\\IDAL\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -293,8 +293,8 @@
           "netcoreapp3.0": {
             "targetAlias": "netcoreapp3.0",
             "projectReferences": {
-              "D:\\GitApps\\BusinessMitraApi\\WithSwagger\\Models\\Models.csproj": {
-                "projectPath": "D:\\GitApps\\BusinessMitraApi\\WithSwagger\\Models\\Models.csproj"
+              "D:\\GitApps\\bmapi\\Models\\Models.csproj": {
+                "projectPath": "D:\\GitApps\\bmapi\\Models\\Models.csproj"
               }
             }
           }
@@ -341,14 +341,14 @@
         }
       }
     },
-    "D:\\GitApps\\BusinessMitraApi\\WithSwagger\\Models\\Models.csproj": {
+    "D:\\GitApps\\bmapi\\Models\\Models.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\GitApps\\BusinessMitraApi\\WithSwagger\\Models\\Models.csproj",
+        "projectUniqueName": "D:\\GitApps\\bmapi\\Models\\Models.csproj",
         "projectName": "Models",
-        "projectPath": "D:\\GitApps\\BusinessMitraApi\\WithSwagger\\Models\\Models.csproj",
+        "projectPath": "D:\\GitApps\\bmapi\\Models\\Models.csproj",
         "packagesPath": "C:\\Users\\Prashant\\.nuget\\packages\\",
-        "outputPath": "D:\\GitApps\\BusinessMitraApi\\WithSwagger\\Models\\obj\\",
+        "outputPath": "D:\\GitApps\\bmapi\\Models\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -418,14 +418,14 @@
         }
       }
     },
-    "D:\\GitApps\\BusinessMitraApi\\WithSwagger\\myschool\\myschool.csproj": {
+    "D:\\GitApps\\bmapi\\myschool\\myschool.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\GitApps\\BusinessMitraApi\\WithSwagger\\myschool\\myschool.csproj",
+        "projectUniqueName": "D:\\GitApps\\bmapi\\myschool\\myschool.csproj",
         "projectName": "myschool",
-        "projectPath": "D:\\GitApps\\BusinessMitraApi\\WithSwagger\\myschool\\myschool.csproj",
+        "projectPath": "D:\\GitApps\\bmapi\\myschool\\myschool.csproj",
         "packagesPath": "C:\\Users\\Prashant\\.nuget\\packages\\",
-        "outputPath": "D:\\GitApps\\BusinessMitraApi\\WithSwagger\\myschool\\obj\\",
+        "outputPath": "D:\\GitApps\\bmapi\\myschool\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -445,17 +445,17 @@
           "netcoreapp3.0": {
             "targetAlias": "netcoreapp3.0",
             "projectReferences": {
-              "D:\\GitApps\\BusinessMitraApi\\WithSwagger\\BAL\\BAL.csproj": {
-                "projectPath": "D:\\GitApps\\BusinessMitraApi\\WithSwagger\\BAL\\BAL.csproj"
+              "D:\\GitApps\\bmapi\\BAL\\BAL.csproj": {
+                "projectPath": "D:\\GitApps\\bmapi\\BAL\\BAL.csproj"
               },
-              "D:\\GitApps\\BusinessMitraApi\\WithSwagger\\DAL\\DAL.csproj": {
-                "projectPath": "D:\\GitApps\\BusinessMitraApi\\WithSwagger\\DAL\\DAL.csproj"
+              "D:\\GitApps\\bmapi\\DAL\\DAL.csproj": {
+                "projectPath": "D:\\GitApps\\bmapi\\DAL\\DAL.csproj"
               },
-              "D:\\GitApps\\BusinessMitraApi\\WithSwagger\\IBAL\\IBAL.csproj": {
-                "projectPath": "D:\\GitApps\\BusinessMitraApi\\WithSwagger\\IBAL\\IBAL.csproj"
+              "D:\\GitApps\\bmapi\\IBAL\\IBAL.csproj": {
+                "projectPath": "D:\\GitApps\\bmapi\\IBAL\\IBAL.csproj"
               },
-              "D:\\GitApps\\BusinessMitraApi\\WithSwagger\\Models\\Models.csproj": {
-                "projectPath": "D:\\GitApps\\BusinessMitraApi\\WithSwagger\\Models\\Models.csproj"
+              "D:\\GitApps\\bmapi\\Models\\Models.csproj": {
+                "projectPath": "D:\\GitApps\\bmapi\\Models\\Models.csproj"
               }
             }
           }
@@ -503,6 +503,10 @@
             "MySql.Data": {
               "target": "Package",
               "version": "[8.0.19, )"
+            },
+            "PaytmChecksum": {
+              "target": "Package",
+              "version": "[1.0.0, )"
             },
             "Razorpay": {
               "target": "Package",

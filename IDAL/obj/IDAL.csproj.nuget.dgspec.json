@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\GitApps\\BusinessMitraApi\\WithSwagger\\IDAL\\IDAL.csproj": {}
+    "D:\\GitApps\\bmapi\\IDAL\\IDAL.csproj": {}
   },
   "projects": {
-    "D:\\GitApps\\BusinessMitraApi\\WithSwagger\\IDAL\\IDAL.csproj": {
+    "D:\\GitApps\\bmapi\\IDAL\\IDAL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\GitApps\\BusinessMitraApi\\WithSwagger\\IDAL\\IDAL.csproj",
+        "projectUniqueName": "D:\\GitApps\\bmapi\\IDAL\\IDAL.csproj",
         "projectName": "IDAL",
-        "projectPath": "D:\\GitApps\\BusinessMitraApi\\WithSwagger\\IDAL\\IDAL.csproj",
+        "projectPath": "D:\\GitApps\\bmapi\\IDAL\\IDAL.csproj",
         "packagesPath": "C:\\Users\\Prashant\\.nuget\\packages\\",
-        "outputPath": "D:\\GitApps\\BusinessMitraApi\\WithSwagger\\IDAL\\obj\\",
+        "outputPath": "D:\\GitApps\\bmapi\\IDAL\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -31,8 +31,8 @@
           "netcoreapp3.0": {
             "targetAlias": "netcoreapp3.0",
             "projectReferences": {
-              "D:\\GitApps\\BusinessMitraApi\\WithSwagger\\Models\\Models.csproj": {
-                "projectPath": "D:\\GitApps\\BusinessMitraApi\\WithSwagger\\Models\\Models.csproj"
+              "D:\\GitApps\\bmapi\\Models\\Models.csproj": {
+                "projectPath": "D:\\GitApps\\bmapi\\Models\\Models.csproj"
               }
             }
           }
@@ -79,14 +79,14 @@
         }
       }
     },
-    "D:\\GitApps\\BusinessMitraApi\\WithSwagger\\Models\\Models.csproj": {
+    "D:\\GitApps\\bmapi\\Models\\Models.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\GitApps\\BusinessMitraApi\\WithSwagger\\Models\\Models.csproj",
+        "projectUniqueName": "D:\\GitApps\\bmapi\\Models\\Models.csproj",
         "projectName": "Models",
-        "projectPath": "D:\\GitApps\\BusinessMitraApi\\WithSwagger\\Models\\Models.csproj",
+        "projectPath": "D:\\GitApps\\bmapi\\Models\\Models.csproj",
         "packagesPath": "C:\\Users\\Prashant\\.nuget\\packages\\",
-        "outputPath": "D:\\GitApps\\BusinessMitraApi\\WithSwagger\\Models\\obj\\",
+        "outputPath": "D:\\GitApps\\bmapi\\Models\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
